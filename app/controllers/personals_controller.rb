@@ -12,7 +12,7 @@ class PersonalsController < ApplicationController
   end
   private
   def post_params
-    params.require(:personal).permit(:product_name, :product_details, :product_price, :email)
+    params.require(:personal).permit(:product_name, :product_details, :product_price, :email, :tier)
   end
 end
 
