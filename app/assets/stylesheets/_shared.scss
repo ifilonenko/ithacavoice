@@ -104,7 +104,10 @@ body {
 .Icon {
   font-family: $Zonda !important;   
 }
+a.my-tool-tip, a.my-tool-tip:hover, a.my-tool-tip:visited {
 
+    color: black;
+}
 @mixin background-image-retina($file, $type, $width, $height) {
   background-image: image-url($file + '.' + $type);
  
@@ -165,7 +168,9 @@ canvas.BkgBlur {
     width: 80%;
   }
 }
-
+.question-mark{
+  width:50px;
+}
 
 
 .btn-outline {

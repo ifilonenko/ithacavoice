@@ -33,9 +33,14 @@
           </label>
           <label>
             <%= u.label 'Tier Payment' %>
-            <%= u.text_field :tier, class: 'form-control', placeholder: 'Bronze, Silver, or Gold' %>
+              <%= u.text_field :tier, class: 'form-control', placeholder: 'Bronze, Silver, or Gold' %>
           </label>
-
+          <label>
+              <a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Bronze:$625 Silver:
+              $1250 Gold:$1875 Platinum:$2500 "> 
+                <img class="question-mark" src="http://i.imgur.com/Snzat63.png?1">
+              </a>
+          </label>
         </div>
         <div class='form-group'>
           <%= u.submit 'Create Ad', class: 'btn btn-primary', id: 'postCreate' %>
