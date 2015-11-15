@@ -170,6 +170,9 @@ canvas.BkgBlur {
 }
 .question-mark{
   width:50px;
+  &:hover{
+    cursor:pointer;
+  }
 }
 
 
