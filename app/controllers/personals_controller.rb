@@ -6,9 +6,10 @@ class PersonalsController < ApplicationController
     @personal = Personal.new(post_params)
     @image = Image.create(file: params[:personal][:tagphoto], imageable_type: 'Post', imageable_id: @personal.id)
     @personal.update_attributes(tagphoto_url: @image.file.url)
-    # Need Mailchimp
-
+    # Need Mailchimp Account
     #PersonalAddMailer.send_mail(@personal).deliver_now 
+    # Need GoogleDrive Account
+    
     redirect_to root_path
   end
   private
