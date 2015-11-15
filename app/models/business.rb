@@ -13,4 +13,5 @@
 #
 
 class Business < ActiveRecord::Base
+  has_one :tagphoto, class_name: 'Image', as: :imageable
 end

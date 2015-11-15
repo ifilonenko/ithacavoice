@@ -3,11 +3,12 @@ class PersonalsController < ApplicationController
   def ad
   end
   def create
-    @success = false
     @personal = Personal.new(post_params)
     @image = Image.create(file: params[:personal][:tagphoto], imageable_type: 'Post', imageable_id: @personal.id)
     @personal.update_attributes(tagphoto_url: @image.file.url)
-    PersonalAddMailer.send_mail(@personal).deliver_now 
+    # Need Mailchimp
+
+    #PersonalAddMailer.send_mail(@personal).deliver_now 
     redirect_to root_path
   end
   private

@@ -6,6 +6,7 @@ class PersonalAddMailer < ActionMailer::Base
     name = ad.product_name
     details = ad.product_details
     photo = ad.tagphoto_url
-    mail(to: "ilan.fil@gmail.com", subject: "Personal Ad Order from #{ email }", body: "Dear Ithaca Voice, I wish to advertise my product with this following information. Product Name: #{ name }; Product Details: #{ details }; Photo URL: #{ photo }")
+    tier = ad.tier
+    mail(to: "ilan.fil@gmail.com", subject: "Personal Ad Order from #{ email }", body: "Dear Ithaca Voice, I wish to advertise my product with this following information. Product Name: #{ name }; Product Details: #{ details }; Photo URL: ithaca-voice.herokuapp.com#{ photo }; Tier: #{ tier }")
   end
 end

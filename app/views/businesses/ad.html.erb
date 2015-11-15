@@ -3,5 +3,39 @@
     <div class= "navbar-area">
       <%= render 'shared/header' %>
     </div>
+    <div class="form-holder">
+      <%= form_for Business.new do |u| %>
+        <div class='form-group'>
+            <%= u.label 'Business Name' %>
+            <%= u.text_field :business_name, class: 'form-control', placeholder: 'Ithaca Bakery' %>
+          </label>
+        </div>
+        <div class='form-group'>
+            <%= u.label 'Business Description' %>
+            <%= u.text_area :business_description, class: 'form-control', placeholder: 'We make some amazing bagels' %>
+          </label>
+        </div>
+        <div class='form-group'>
+          <label>
+            <%= u.label 'Company Photo' %>
+            <%= u.file_field :tagphoto %>
+          </label>
+        </div>
+        <div class='form-group'>
+          <label class="pemail">
+            <%= u.label 'Company Email' %>
+            <%= u.text_field :email, class: 'form-control pemail', placeholder: 'your@email.com' %>
+          </label>
+          <label>
+            <%= u.label 'Tier Payment' %>
+            <%= u.text_field :tier, class: 'form-control', placeholder: 'Bronze, Silver, or Gold' %>
+          </label>
+
+        </div>
+        <div class='form-group'>
+          <%= u.submit 'Create Ad', class: 'btn btn-primary', id: 'postCreate' %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
