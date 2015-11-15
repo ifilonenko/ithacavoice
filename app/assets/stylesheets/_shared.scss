@@ -187,7 +187,24 @@ canvas.BkgBlur {
 .EditingToggle {
   clear: both;
 }
-
+.form-holder{
+    width: 50em;
+    margin-top: 2em;
+    margin-right: auto;
+    padding: 1em;
+    margin-left: auto;
+    -webkit-box-shadow: 0px 0px 29px 8px rgba(82,175,82,0.44);
+    -moz-box-shadow: 0px 0px 29px 8px rgba(82,175,82,0.44);
+    box-shadow: 0px 0px 29px 8px rgba(82,175,82,0.44);
+}
+.form-group {
+    margin-bottom: 15px !important;
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: block !important;
+    margin-top: 2em !important;
+}
 .form-control {
   border: 1px solid #CCCCCC;
   &:focus {
@@ -223,7 +240,10 @@ canvas.BkgBlur {
 .modal-footer {
   background: white;
 }
-
+.btn-primary {
+  background-color: $green !important;
+  border-color: black !important;
+}
 #nav {
   box-shadow: 0px 6px 5px rgba(0,0,0,0.2);
   background: rgba(255, 255, 255, 0.91);
@@ -248,7 +268,8 @@ canvas.BkgBlur {
     margin-left: 0.5em;
   }
   .btn-primary {
-    border-color: $green;
+    background-color: $green !important;
+    border-color: #2e6da4 !important;
   }
   .btn-group {
     .btn {

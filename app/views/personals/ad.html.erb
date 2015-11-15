@@ -3,35 +3,39 @@
     <div class= "navbar-area">
       <%= render 'shared/header' %>
     </div>
-    <%= form_for Personal.new do |u| %>
-      <div class='form-group'>
-          <%= u.label 'Product Name' %>
-          <%= u.text_field :product_name, class: 'form-control', placeholder: '2008 Audi' %>
-        </label>
-      </div>
-      <div class='form-group'>
-          <%= u.label 'Product Details' %>
-          <%= u.text_area :product_details, class: 'form-control', placeholder: 'Quality car for a quality person' %>
-        </label>
-      </div>
-      <div class='form-group'>
-          <%= u.label 'Product Price' %>
-          <%= u.text_field :product_price, class: 'form-control', placeholder: '$8.00' %>
-        </label>
-      </div>
-      <div class='form-group'>
-        <label>
-          <%= u.label 'Product Photo' %>
-          <%= u.file_field :tagphoto %>
-        </label>
-      </div>
-      <div class='form-group'>
-        <label>
-          <%= u.label 'Personal Email' %>
-          <%= u.text_field :email, class: 'form-control', placeholder: 'your@email.com' %>
-        </label>
-      </div>
-      <%= u.submit 'Create Ad', class: 'btn btn-primary', id: 'postCreate' %>
-    <% end %>
+    <div class="form-holder">
+      <%= form_for Personal.new do |u| %>
+        <div class='form-group'>
+            <%= u.label 'Product Name' %>
+            <%= u.text_field :product_name, class: 'form-control', placeholder: '2008 Audi' %>
+          </label>
+        </div>
+        <div class='form-group'>
+            <%= u.label 'Product Details' %>
+            <%= u.text_area :product_details, class: 'form-control', placeholder: 'Quality car for a quality person' %>
+          </label>
+        </div>
+        <div class='form-group'>
+            <%= u.label 'Product Price' %>
+            <%= u.text_field :product_price, class: 'form-control', placeholder: '$8.00' %>
+          </label>
+        </div>
+        <div class='form-group'>
+          <label>
+            <%= u.label 'Product Photo' %>
+            <%= u.file_field :tagphoto %>
+          </label>
+        </div>
+        <div class='form-group'>
+          <label>
+            <%= u.label 'Personal Email' %>
+            <%= u.text_field :email, class: 'form-control', placeholder: 'your@email.com' %>
+          </label>
+        </div>
+        <div class='form-group'>
+          <%= u.submit 'Create Ad', class: 'btn btn-primary', id: 'postCreate' %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
