@@ -4,7 +4,7 @@ require 'google/api_client/auth/storage'
 
 class IlansGoogle
   def client_secrets
-    @client_secrets ||= Google::APIClient::ClientSecrets.load("#{Dir.pwd}/google_client_credentials.json")
+    @client_secrets ||= Google::APIClient::ClientSecrets.load("#{Dir.pwd}/client_secret.json")
   end
 
   def base_client

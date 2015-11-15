@@ -7,7 +7,7 @@ require 'fileutils'
 
 
 APPLICATION_NAME = 'Drive API Ruby Quickstart'
-CLIENT_SECRETS_PATH = 'google_client_credentials.json'
+CLIENT_SECRETS_PATH = 'client_sercret.json'
 CREDENTIALS_PATH = File.join(Dir.home, '.credentials',
                              "drive-ruby-quickstart.json")
 SCOPE = 'https://www.googleapis.com/auth/drive'

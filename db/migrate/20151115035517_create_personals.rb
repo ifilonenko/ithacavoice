@@ -6,7 +6,7 @@ class CreatePersonals < ActiveRecord::Migration
       t.string :product_price
       t.string :email
       t.string :tagphoto_url
-
+      t.string :tier
       t.timestamps null: false
     end
   end

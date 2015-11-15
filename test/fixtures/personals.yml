@@ -8,6 +8,7 @@
 #  product_price   :string
 #  email           :string
 #  tagphoto_url    :string
+#  tier            :string
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #

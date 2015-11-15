@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151115061003) do
+ActiveRecord::Schema.define(version: 20151115094935) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "businesses", force: :cascade do |t|
+    t.string   "business_name"
+    t.string   "business_description"
+    t.string   "email"
+    t.string   "tagphoto_url"
+    t.string   "tier"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
   create_table "googlecredits", force: :cascade do |t|
     t.string   "outh_token"
@@ -44,6 +54,7 @@ ActiveRecord::Schema.define(version: 20151115061003) do
     t.string   "product_price"
     t.string   "email"
     t.string   "tagphoto_url"
+    t.string   "tier"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
