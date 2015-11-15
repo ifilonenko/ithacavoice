@@ -4,8 +4,11 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#home'
-  get '/personal' => 'personals#create'
-  get '/business' => 'businesses#create'
+  resources :personals
+  resources :businesses
+  get '/oauth/callback' => 'googlecredits#create_tokens'
+  get '/personal' => 'personals#ad'
+  get '/business' => 'businesses#ad'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

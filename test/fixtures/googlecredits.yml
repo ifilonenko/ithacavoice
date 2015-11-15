@@ -1,10 +1,13 @@
 # == Schema Information
 #
-# Table name: businesses
+# Table name: googlecredits
 #
-#  id         :integer          not null, primary key
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id            :integer          not null, primary key
+#  outh_token    :string
+#  access_token  :string
+#  refresh_token :string
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

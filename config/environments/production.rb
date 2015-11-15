@@ -76,4 +76,13 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :authentication => :plain,
+    :address => "smtp.mailgun.org",
+    :port => 587,
+    :domain => "ithaca-voice.herokuapp.com.mailgun.org",
+    :user_name => "postmaster@ithaca-voice.herokuapp.com.mailgun.org",
+    :password => "1511b862fefdd8dd84b7bcb8669154b3"
+  }
 end

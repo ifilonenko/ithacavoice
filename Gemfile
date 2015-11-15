@@ -35,7 +35,9 @@ gem 'aws-sdk'
 gem 'react-rails'
 gem 'font-awesome-rails'
 gem 'passenger', '~> 5.0.15'
-
+gem 'google-api-client', '0.8.6'
+gem "figaro"
+gem 'mailgun-ruby', '~>1.0.3', require: 'mailgun'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
